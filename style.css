@@ -1,0 +1,439 @@
+*{
+    font-family: "Tiro Telugu";
+}
+html{
+    min-height: 100%;
+    overflow-x: hidden;
+}
+body {
+    min-height: 100%;
+}
+.items{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.items img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: 50%;
+
+}
+.items div{
+    width: 80%;
+    margin: 15px auto;
+    min-height: 100px;
+    background: #fff;
+    border-radius: 15px;
+}
+.additemtext{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 30px;
+    background: #fff;
+    text-align: center;
+}
+.addgoods{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+}
+.in1{
+    border-radius: 10px;
+}
+.in1:focus{
+    outline: 1px solid red;
+}
+.in2{
+    border-radius: 10px;
+}
+.in2:focus{
+    outline: 1px solid red;
+}
+.in3{
+    border-radius: 10px;
+}   
+.in3:focus{
+    outline: 1px solid red;
+} 
+.addgoods input, .addgoods textarea{
+    width: 50%;
+    margin: 15px auto;
+    display: block;
+    resize: none;
+}
+.addgoods button{
+    width: 30%;
+    display: block;
+    margin: 10px auto;
+    margin-top: 30px;
+}
+.items p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.img-back{
+    background-image: url(./img/back2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.img-back2{
+    background-image: url(./img/back2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.image img{
+    height: 370px;
+    object-fit: cover;
+    width: 250px;
+    border-radius: 10px;
+}
+.container{
+    margin-top: 50px;
+    margin-left: 45px;
+    margin-bottom: 200px;
+    display: inline-block;
+   
+}
+h3 {
+        color: white;
+        text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;  
+}
+.image{
+    margin-bottom: 5px;
+    height: 250px;
+    width: 250px;
+
+}
+.info H3{
+    font-size: 17px;
+    margin-bottom: 0;
+}
+.rating{
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.rating li{
+    display: inline-block;
+    color: #ffc107;
+}
+.info-price{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-to-card{
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7CFC00;
+    cursor: pointer;
+}
+.price{
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+.head{
+background-color: #000;
+width: 100%;
+display: grid;
+grid-template-columns: 60% 40%;
+height: 100px;
+position: fixed;
+top: 0;    
+z-index: 100;
+}
+.head-info-line {
+color: #fff;
+margin-left: 30px;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+.logo{
+    color: #fff;
+    font-family: "Tiro Telugu";
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 40px;
+    margin-right: 30px;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.heart img{
+    width: 70px;
+    height: 70px;
+}
+
+.head-info {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+:root {
+    --rad: .4rem;
+    --dur: .3s;
+    --color-dark: #000;
+    --color-light: #fff;
+    --color-brand: rgb(228, 24, 25);
+    --font-fam: 'Lato', sans-serif;
+    --height: 4rem;
+    --btn-width: 5rem;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
+  }
+  
+
+  
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+    font-size: 10px;
+  }
+  
+  *, *::before, *::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  .searchForm {
+    position: relative;
+    width: 30rem;
+    background: var(--color-brand);
+    border-radius: var(--rad);
+    margin-top: 100px;
+    margin-left: 600px;
+  }
+  
+  .searchForm input, .searchForm button {
+    height: var(--height);
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+    font-size: 1.8rem;
+  }
+  
+  .searchForm input[type="search"] {
+    outline: 0;
+    width: 100%;
+    background: var(--color-light);
+    padding: 0 1.6rem;
+    border-radius: var(--rad);
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-transition: all var(--dur) var(--bez);
+    transition: all var(--dur) var(--bez);
+    -webkit-transition-property: width, border-radius;
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .searchForm button {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--btn-width);
+    font-weight: bold;
+    background: var(--color-brand);
+    border-radius: 0 var(--rad) var(--rad) 0;
+  }
+  
+  .searchForm input:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+  }
+  
+  .searchForm input:not(:placeholder-shown) + button {
+    display: block;
+  }
+  
+  .searchForm label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+.parashaSukaNahuyBlya {
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+
+.foo{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(228, 24, 25);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    bottom: 0;
+    position: fixed;
+}
+
+.info-footer{
+    color:#000;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 22px;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: "Comfortaa";
+}
+.social ion-icon{ 
+    height: 40px;
+    width: 40px;    
+}
+.social a{
+    color: #000;
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+
+/*login*/
+
+.loginNeon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.loginBlock {
+    width: 50%;
+    max-height: 400px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 75px;;
+    border: 3px solid #fff;
+    border-radius: 2rem;
+    animation: flicker 720s infinite alternate;
+}
+.loginBlock p {
+    color: #fff;
+    font-family: "Tiro Telugu";
+    font-size: 25px;
+    text-align: center;
+}
+
+.loginBlock input {
+    display: block;
+    width: 40%;
+    margin: 10px auto;
+    outline: none;
+    background: #fff;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.loginBlock button {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem rgb(228, 24, 25),
+            inset 0 0 2rem rgb(228, 24, 25),
+            0 0 4rem rgb(228, 24, 25),
+            inset 0 0 4rem rgb(228, 24, 25);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
+.login{
+    border-radius: 2rem;
+}
+.password{
+    border-radius: 2rem;
+}
+.zalog{
+    border-radius: 1rem;
+}
+.zalog1{
+    border-radius: 1rem;
+}
+
+.loginBody {
+    background-image: url(./img/back2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.regi{
+    font-size: 20px !important;
+}
+
+/*registration*/
+
+.regNeon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 145px;
+}
+.email{
+    border-radius: 2rem;
+}
+.phone{
+    border-radius: 2rem;
+}
+.repeatpassword{
+    border-radius: 2rem;
+}
+.regi1{
+    font-size: 20px !important;
+}
+
+/* cart */
+.img-back3{
+    background-image: url(./img/back2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
